@@ -1,6 +1,9 @@
 {
   "name": "fitnest",
   "version": "0.1.0",
+  "engines": {
+    "node": "8.10.0"
+  },
   "dependencies": {
     "cuid": "^2.1.1",
     "date-fns": "^1.29.0",
