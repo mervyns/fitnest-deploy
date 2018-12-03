@@ -7,9 +7,9 @@ const HomePage = ({history}) => {
         <div className="ui text container">
           <h1 className="ui inverted stackable header">
             <img className="ui image massive" src="/assets/logo.png" alt="logo" />
-            <div className="content">Re-vents</div>
+            <div className="content">FitNest</div>
           </h1>
-          <h2>Do whatever you want to do</h2>
+          <h2>Your Online-To-Offline Fitness Community</h2>
           <div onClick={() => history.push('/events')} className="ui huge white inverted button">
             Get Started
             <i className="right arrow icon" />
@@ -17,17 +17,9 @@ const HomePage = ({history}) => {
         </div>
       </div>
       <div style={{ textAlign: 'center' }}>
-        Icons made by{' '}
-        <a href="http://www.freepik.com" title="Freepik">
-          Freepik
-        </a>{' '}
-        from{' '}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>{' '}
-        is licensed by{' '}
-        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">
-          CC 3.0 BY
+        Site made by{" "} 
+        <a href="https://github.com/mervyns" title="Mervyn's Github">
+          Mervyn Tan
         </a>
       </div>
     </div>

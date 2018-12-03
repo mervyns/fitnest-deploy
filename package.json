@@ -2,7 +2,7 @@
   "name": "revents",
   "version": "0.1.0",
   "engines": {
-    "node": "8.10.0"
+    "yarn": "1.12.3"
   },
   "dependencies": {
     "cuid": "^2.1.1",

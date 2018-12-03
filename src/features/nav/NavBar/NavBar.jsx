@@ -37,12 +37,11 @@ class NavBar extends Component {
     return (
       <Menu inverted fixed="top">
         <Container>
-          <Menu.Item as={Link} to="/" header>
+          <Menu.Item as={Link} to="/events" header>
             <img src="/assets/logo.png" alt="logo" />
-            Re-vents
+            FitNest
           </Menu.Item>
           <Menu.Item as={NavLink} to="/events" name="Events" />
-          <Menu.Item as={NavLink} to="/test" name="Test" />
           {authenticated &&
           <Menu.Item as={NavLink} to="/people" name="People" />}
           {authenticated &&

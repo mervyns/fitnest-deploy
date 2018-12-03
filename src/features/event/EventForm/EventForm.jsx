@@ -35,12 +35,11 @@ const actions = {
 };
 
 const category = [
-  { key: 'drinks', text: 'Drinks', value: 'drinks' },
-  { key: 'culture', text: 'Culture', value: 'culture' },
-  { key: 'film', text: 'Film', value: 'film' },
-  { key: 'food', text: 'Food', value: 'food' },
-  { key: 'music', text: 'Music', value: 'music' },
-  { key: 'travel', text: 'Travel', value: 'travel' }
+  { key: 'bootcamp', text: 'Boot Camp', value: 'bootcamp' },
+  { key: 'yoga', text: 'Yoga', value: 'yoga' },
+  { key: 'spin', text: 'Spin Class', value: 'spin' },
+  { key: 'run', text: 'Run', value: 'run' },
+  { key: 'cycle', text: 'Road Cycling', value: 'cycle' }
 ];
 
 const validate = combineValidators({
