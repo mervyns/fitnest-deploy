@@ -1,9 +1,6 @@
 {
-  "name": "revents",
+  "name": "fitnest",
   "version": "0.1.0",
-  "engines": {
-    "yarn": "1.12.3"
-  },
   "dependencies": {
     "cuid": "^2.1.1",
     "date-fns": "^1.29.0",
