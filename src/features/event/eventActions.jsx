@@ -3,8 +3,15 @@ import { toastr } from 'react-redux-toastr';
 import { createNewEvent } from '../../app/common/util/helpers';
 import firebase from '../../app/config/firebase';
 import { asyncActionError, asyncActionFinish, asyncActionStart } from '../async/asyncActions';
-import { FETCH_EVENTS } from './eventConstants';
+import { DELETE_EVENT, FETCH_EVENTS } from './eventConstants';
 import compareAsc from 'date-fns/compare_asc';
+
+export const fetchEvents = (events) => {
+  return {
+    type: FETCH_EVENTS,
+    payload: events
+  }
+}
 
 export const createEvent = event => {
   return async (dispatch, getState, { getFirestore }) => {
@@ -85,6 +92,15 @@ export const cancelToggle = (cancelled, eventId) => async (
     console.log(error);
   }
 };
+
+export const deleteEvent = (eventId) => {
+  return {
+    type: DELETE_EVENT,
+    payload: {
+      eventId
+    }
+  }
+}
 
 export const getEventsForDashboard = lastEvent => async (dispatch, getState) => {
   let today = new Date(Date.now());
